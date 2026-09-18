@@ -1,8 +1,18 @@
 # docker-images
 ## Instructions de lancement
+## Registre Docker Hub
 
+Les images construites sont publiées et disponibles publiquement :
+Dépôt : [hub.docker.com/repository/docker/hayetderdour/docker-images](https://hub.docker.com/repository/docker/hayetderdour/docker-images/general)
+
+### Récupérer les images directement
+
+docker pull hayetderdour/docker-images:nginx-v1
+docker pull hayetderdour/docker-images:versioning-v1
+docker pull hayetderdour/docker-images:versioning-v2
+docker pull hayetderdour/docker-images:env-variables-1.0
+docker pull hayetderdour/docker-images:python-app-1.0
 ###Cloner le projet
-```bash
 git clone [https://github.com/hayetder3/docker-images.git](https://github.com/hayetder3/docker-images.git)
 cd docker-images
 ###Nginx Statique (Port 8080)
