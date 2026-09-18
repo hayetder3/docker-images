@@ -13,18 +13,18 @@ docker pull hayetderdour/docker-images:env-variables-1.0
 docker pull hayetderdour/docker-images:python-app-1.0
 
 
-#Cloner le projet
+###Cloner le projet
 git clone [https://github.com/hayetder3/docker-images.git](https://github.com/hayetder3/docker-images.git)
 cd docker-images
 
-#Nginx Statique (Port 8080)
+###Nginx Statique (Port 8080)
 cd nginx
 sudo docker build -t tp-nginx:v1 .
 sudo docker run -d -p 8080:80 --name nginx-c tp-nginx:v1
 curl http://localhost:8080
 cd ..
 
-#Versioning applicatif (Ports 8081 & 8082)
+##Versioning applicatif (Ports 8081 & 8082)
 cd versioning
 
 # Version 1
@@ -39,7 +39,7 @@ curl http://localhost:8082
 
 cd ..
 
-#Variables d'environnement
+##Variables d'environnement
 cd env-variables
 sudo docker build -t tp-env:1.0 .
 
